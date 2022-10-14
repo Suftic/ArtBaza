@@ -26,7 +26,7 @@ body {
 }
 
 
-.header li, a {
+.header a {
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     color: #fff;
@@ -34,26 +34,37 @@ body {
     font-size: 20px;
 }
 
-.logo {
+.menu__link {
+    border-bottom: solid 1px transparent;
+    padding-bottom: 4px;
+}
+
+.menu__link:hover {
+    border-bottom: solid 1px #FFDA73;
+    color:#FFDA73;
+    transition: 0.8s;
+}
+
+.header__logo {
     padding: 0 20px;
     text-align: center;
 }
 
-.left_menu {
+.header__left-menu {
     padding: 0!important;
     
 }
 
-.left_menu li {
+.header__left-menu li {
     display: inline-block;
     padding: 0 30px;
 }
 
-.right_menu {
+.header__right-menu {
     padding: 0!important;
 }
 
-.right_menu li {
+.header__right-menu li {
     display: inline-block;  
     padding: 0 30px;
 
@@ -69,12 +80,12 @@ body {
 
 .first {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background-size: 100%;
     background: url(../main_page/Baner.png) no-repeat right top;
 }
 
-.main_title  {
+.first__main-title  {
     position: relative;
     left: 372px;
     top: 210px;
@@ -83,7 +94,7 @@ body {
 
 
 
-.main_title h1 {
+.first__main-title h1 {
     margin: 0!important;
     color: #FFDA73;
     font-family: Montserrat, sans-serif;
@@ -92,7 +103,7 @@ body {
 
 }
 
-.main_title h3 {
+.first__main-title h3 {
     margin: 0!important;
     color: #fff;
     font-family: Montserrat, sans-serif;
@@ -100,49 +111,51 @@ body {
     font-size: 29px; 
 }
 
-
-
+/* ****************SECOND************** */
 
 .second {
     position: relative;
-    height: 100%;
     width: 100%;
 }
 
-.front_foto {
-    margin-left: 125px;
+.second__foto {
+    margin: 50px 0 0 125px;
     z-index: 40;
-    box-shadow: 52px 52px 0 0 #FFDA73;
-    margin-top: 15vh;
 }
 
+.front-foto {
+    box-shadow: 52px 52px 0 0 #FFDA73;
+}
 
-.second_text {
+.second__text {
     position: absolute;
     width: 665px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color:#fff ;
     z-index: 50;
     background-color: #2A2928B2;
     top: 0;
     right: 0;
-    margin-top: 32vh;
     padding: 20px 75px 20px 60px;
+    margin-top: 150px;
 }
 
+.second__inside-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color:#fff ;
+}
 
 .yellow_text {
     color:#FFDA73;
 }
 
-.button_area {
+.second__button-area, .fourth__button_area {
     text-align: center;
     padding: 110px 0 100px 0;
 }
 
 .button1 {
+    text-decoration: none;
     color:#FFDA73; 
     border:#FFDA73 solid 3px; 
     background: none;
@@ -153,6 +166,19 @@ body {
     padding: 5px 12px 5px 12px;
 } 
 
+.button1:hover {
+    color:#2A2928;
+    background: #FFDA73;
+    transition: 0.5s;
+
+}
+
+.button1:active {
+    color:#fff;
+}
+
+/* ***********THIRD************* */
+
 .third {
     height: 770px;
     width: 100%;
@@ -162,7 +188,7 @@ body {
 
 
 
-.first_row {
+.third__first-row {
     width: 100%;
     height: 40%;
     display: flex;
@@ -201,7 +227,7 @@ body {
     text-align: center;
 }
 
-.second_row {
+.third__second-row {
     width: 100%;
     height: 25%;
     display: flex;
@@ -211,20 +237,20 @@ body {
     position: relative;
 }
 
-.one_row {
+.third__one-row {
     align-self: flex-start;
     position: relative;
     flex-basis: 30%;
 }
 
-.two_row {
+.third__two-row {
     align-self: center;
     position: relative;
     flex-basis: 30%;
 
 }
 
-.three_row {
+.third__three-row {
     align-self: flex-end;
     position: relative;
     flex-basis: 30%;
@@ -241,6 +267,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
+
 }
 
 .back_photos {
@@ -251,9 +279,7 @@ body {
     z-index: 10;
 }
 
-
-
-.little_yellow {
+.third__under-block {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -336,6 +362,7 @@ body {
     color:#FFDA73;
     position: absolute; 
     z-index: 20;
+    padding-left: 120px;
 }
 
 .img_text {
@@ -424,11 +451,9 @@ body {
 .flex_footer {
     width: 100%;
     display: flex;
-    /* border: rgb(80, 199, 98) solid 3px; */
 }
 
 .first_logo {
-    /* border: rgb(147, 80, 199) solid 3px; */
     display: flex;
     align-items:center;
     flex-basis: 50%;
@@ -442,28 +467,25 @@ body {
     padding-left: 20px;
 }
 
-.flex_footer {
+.flex_footer a, p {
     color:#fff;
-    text-decoration: none;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
-    padding-left: 40px;
 }
 
 .first_nav_footer {
-    /* border: rgb(147, 80, 199) solid 3px; */
     display: flex;
     align-items:center;
     flex-basis: 25%;
 }
 
 .second_nav_footer  {
-    /* border: rgb(147, 80, 199) solid 3px; */
     display: flex;
     align-items:center;
     flex-basis: 25%;
+    
 }
 
 .second_nav_footer li {
@@ -479,6 +501,5 @@ body {
 
 
 .footer_icons {
-    /* border: 1px solid #fff; */
     margin-left: 20px;
 }
