@@ -26,7 +26,7 @@ body {
 }
 
 
-.header li, a {
+.header a {
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     color: #fff;
@@ -34,32 +34,44 @@ body {
     font-size: 20px;
 }
 
-.logo {
+.menu__link {
+    border-bottom: solid 1px transparent;
+    padding-bottom: 4px;
+}
+
+.menu__link:hover {
+    border-bottom: solid 1px #FFDA73;
+    color:#FFDA73;
+    transition: 0.8s;
+}
+
+.header__logo {
     padding: 0 20px;
     text-align: center;
 }
 
-.left_menu {
+.header__left-menu {
     padding: 0!important;
     
 }
 
-.left_menu li {
+.header__left-menu li {
     display: inline-block;
     padding: 0 30px;
 }
 
-.right_menu {
+.header__right-menu {
     padding: 0!important;
 }
 
-.right_menu li {
+.header__right-menu li {
     display: inline-block;  
     padding: 0 30px;
 
 }
 
 /* ***********CONTENT******** */
+
 
 .main {
     padding-top: 80px;
@@ -129,12 +141,25 @@ body {
 .button_in_block {
     width: max-content;
     padding: 8px 18px 8px 18px;
-    background-color:#FFDA73;
+    background-color: none;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    color: #2A2928;
+    color: #FFDA73;
+    border:#FFDA73 solid 3px; 
+    text-decoration: none;
+}
+
+.button_in_block:hover {
+    color:#2A2928;
+    background: #FFDA73;
+    transition: 0.5s;
+
+}
+
+.button_in_block:active {
+    color:#fff;
 }
 
 /* *******CONTACTS******* */
@@ -143,7 +168,7 @@ body {
 }
 
 
-.img_title h2 {
+.sixth__img-title h2 {
     margin: 0!important;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
@@ -151,9 +176,10 @@ body {
     color:#FFDA73;
     position: absolute; 
     z-index: 20;
+    padding-left: 120px;
 }
 
-.img_text {
+.sixth__img-text {
     padding-top: 28px;
     display: flex;
     flex-direction: row;
@@ -208,10 +234,15 @@ body {
     font-size: 14px;
     color: #FFFFFF;
     margin: 0!important;
-
+    text-decoration: none;
 }
 
-.icons1 {
+.sec_text:hover {
+    color:#FFDA73;
+    transition: 0.6s;
+}
+
+.icons-all {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -221,7 +252,17 @@ body {
 .icons {
     height: 35px;
 }
-/* ******FOOTER****** */
+
+.icons:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+/* ***********MAP************** */
+
+
+
+/* ******FOTTER****** */
 
 .footer {
     display: flex;
@@ -250,13 +291,12 @@ body {
     padding-left: 20px;
 }
 
-.flex_footer {
+.flex_footer a, p {
     color:#fff;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
-    padding-left: 40px;
 }
 
 .first_nav_footer {
@@ -281,9 +321,19 @@ body {
     padding: 10px;
 }
 
+.img_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
 
+.footer_icons:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+}
 
-.footer_icons {
-    /* border: 1px solid #fff; */
-    margin-left: 20px;
+.footer__links:hover {
+    color:#FFDA73;
+    transition: 0.6s;
 }

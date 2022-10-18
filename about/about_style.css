@@ -80,17 +80,17 @@ body {
 .first {
     width: 100%;
     height: 100vh;
-    background: url(./media_rent/baner.jpg) no-repeat;
+    background: url(./about_media/baner.jpg) no-repeat;
     background-size: 100%;
 }
 
-.first__main-title  {
+.main_title  {
     position: relative;
     left: 172px;
     top: 210px;
 }
 
-.first__main-title h1 {
+.main_title h1 {
     margin: 0!important;
     color: #FFDA73;
     font-family: Montserrat, sans-serif;
@@ -99,7 +99,7 @@ body {
 
 }
 
-.first__main-title h3 {
+.main_title h3 {
     margin: 0!important;
     color: #fff;
     font-family: Montserrat, sans-serif;
@@ -111,117 +111,92 @@ body {
 
 .second {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 150px;
 }
 
-.second__title {
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 59px;
-    color: #FFDA73;
-    padding-left: 160px;
-}
-
-.second__location-blocks {
+.workshop1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 130px 0 200px 0;
+}
+
+.img_shop1 img {
+    box-shadow: 45px 45px #FFDA73;
+    width: 542px;
+    margin-right: 100px;
 
 }
 
-.second__block1 {
+.shop_text1 {
     display: flex;
     flex-direction: column;
-    width: 520px;
-    height: 454px;
-    background: url(./media_rent/studio1.jpg) no-repeat;
-    box-shadow: 43px 43px #FFDA73;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.second__block2 {
-    display: flex;
-    flex-direction: column;
-    width: 520px;
-    height: 454px;
-    background: url(./media_rent/studio2.jpg) no-repeat;
-    box-shadow: 43px 43px #FFDA73;
-}
-
-.text-block {
-    margin: 0!important;
-    padding: 15px 0 0 15px;
+.shop_text1 h2 {
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 49px;
-    color: #FFFFFF;
-}
-
-.size-location {
-    margin: 0!important;
-    font-family: Montserrat, sans-serif;
+    font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
     color: #FFDA73;
-    padding-left: 15px;
 }
 
-.button-in-block {
-    width: max-content;
-    padding: 8px 18px 8px 18px;
-    background-color:#FFDA73;
-    border:#FFDA73 2px solid;
+.shop_text1 p {
+    width: 75%;
+    list-style-type: none;
+    padding: 0!important;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #2A2928;
-    align-self: center;
-    margin-top: 100px;
-    text-decoration: none;
-}
-
-.button-in-block:hover {
-    color:#FFDA73;
-    background: none;
-    transition: 0.6s;
-}
-
-.button-in-block:active {
-    color:#fff;
-}
-
-.more-in-block {
-    width: max-content;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    border-bottom: 1px solid #fff;
-    align-self: center;
-    margin-top: 100px;
-    text-decoration: none;
 }
 
-.more-in-block:hover {
-    color:#FFDA73;
-    border-bottom: 1px solid #FFDA73;
-    transition: 0.6s;
+.img_shop2 img {
+    box-shadow: -45px 45px #FFDA73;
+    width: 542px;
+    margin-left: 100px;
 
 }
 
-/* *******THIRD_BLOCK************ */
-
-.third {
-    width: 100%;
+.workshop2 {
+    display: flex;
 }
 
-/* ********FOURTH_BLOCK*********** */
+.shop_text2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.shop_text2 h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFDA73;
+}
+
+.shop_text2 p {
+    width: 75%;
+    list-style-type: none;
+    padding: 0!important;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+/* **********4************ */
 
 .fourth {
     width: 100%;
@@ -374,12 +349,7 @@ body {
     transform: scale(1.2);
     transition: 0.6s;
 }
-
-/* ***********MAP************** */
-
-
-
-/* ******FOTTER****** */
+/* ******FOOTER****** */
 
 .footer {
     display: flex;
