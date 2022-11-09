@@ -80,7 +80,7 @@ body {
 .first {
     width: 100%;
     height: 100vh;
-    background: url(./about_media/baner.jpg) no-repeat;
+    background: url(./about_media/background.jpg) no-repeat;
     background-size: 100%;
 }
 

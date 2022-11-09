@@ -10,36 +10,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/black_logo.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <nav>
-                <ul class="header__left-menu">
-                    <li><a class="menu__link" href="./rent/rent.html">Студії</a></li>
-                    <li><a class="menu__link" href="./master/master.html">Майстерня</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a class="header__link_logo" href="./index.html"><img class="header__logo" src="./img/logo.png" alt="logo" width="60px"></a>
-            </div>
-            <nav>
-                <ul class="header__right-menu">
-                    <li><a class="menu__link" href="./offices/office.html">Офіси</a></li>
-                    <li><a class="menu__link" href="./about/about.html">Про нас</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="container">
+            <header class="header">
+                <nav>
+                    <ul class="header__left-menu">
+                        <li><a class="menu__link" href="./rent/rent.html">Студії</a></li>
+                        <li><a class="menu__link" href="./master/master.html">Майстерня</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a class="header__link_logo" href="./index.html"><img class="header__logo" src="./img/logo.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul class="header__right-menu">
+                        <li><a class="menu__link" href="./offices/office.html">Офіси</a></li>
+                        <li><a class="menu__link" href="./about/about.html">Про нас</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
 
 
         <main class="main">
-            <section class="first">
-                <div class="first__main-title">
-                    <h1>ArtBaza</h1>
-                    <h3>твій креативний простір</h3>
-                </div>
-            </section>
+            <div class="container"> 
+                <section class="first">
+                    <div class="first__main-title">
+                        <h1>ArtBaza</h1>
+                        <h3>твій креативний простір</h3>
+                    </div>
+                </section>
+            </div>  
 
 
 
@@ -51,7 +60,7 @@
                     <p class="second__inside-text"><span class="yellow_text">ArtBaza</span> — інновативна платформа, котра обʼєднує коворкінг, кінознімальні студії та художню майстерню.</p>
                 </div>
                 <div class="second__button-area">
-                    <a href="#" class="button1">Оренда локації</a>
+                    <a href="#modal-dark" class="button1">Оренда локації</a>
                 </div>
             </section>
 
@@ -111,7 +120,7 @@
                     <p class="icons_title">Кафе, паркінг<br> та лаунж-зони</p>
                 </div>
                 <div class="fourth__button_area">
-                    <a href="#" class="button1">Оренда локації</a>
+                    <a href="#modal-dark" class="button1">Оренда локації</a>
                 </div>
             </section>
 
@@ -164,6 +173,8 @@
                         </div>
                     </div>
                 </div>
+                <a name="contacts"></a>
+
             </section>
 
             <section class="sixth">
@@ -216,13 +227,30 @@
                     </div>
                 </div>
                 <div class="sixth__map">
-                    <a href="https://goo.gl/maps/3nFJnthV6pZa331Q9"><p class="sixth__link-map"> — Показати на мапі — </p></a>
+                    <a href="https://goo.gl/maps/3nFJnthV6pZa331Q9" target="_blank"><p class="sixth__link-map"> — Показати на мапі — </p></a>
                 </div>
                 
             </section>
         </main>
 
-
+        <div id="modal-dark">
+            <div class="modal-dark__block">
+                <form action="sender.php" method="post">
+                    <a href="#" class="close">&#10006;</a>
+                    <p>Ім’я* : <br></p>
+                    <input type="text" class="name" name="name" placeholder="" required>
+                    <p>Номер телефону* : <br></p>
+                    <input type="text" class="phone" name="phone" placeholder="" required>
+                    <p>E-mail : <br></p>
+                    <input type="email" name="email" placeholder="">
+                    <p>Ваші побажання :</p>
+                    <textarea name="text" id="" cols="30" rows="10" placeholder=""></textarea>
+                    <button type="button" class="send-form">Відправити</button>
+                    <div class="status"></div>
+                </form>
+                
+            </div>
+        </div>
 
         <footer class="footer">
             <div class="flex_footer">
@@ -233,26 +261,26 @@
                 <div class="first_nav_footer">
                     <nav>
                         <ul>
-                            <li><a class="footer__links" href="#">Студії</a></li>
-                            <li><a class="footer__links" href="#">Офіси</a></li>
-                            <li><a class="footer__links" href="#">Майстерня</a></li>
+                            <li><a class="footer__links" href="./rent/rent.html">Студії</a></li>
+                            <li><a class="footer__links" href="./offices/office.html">Офіси</a></li>
+                            <li><a class="footer__links" href="./master/master.html">Майстерня</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="second_nav_footer">
                     <nav>
                         <ul>
-                            <li><a class="footer__links" href="#">Про нас</a></li>
-                            <li><a class="footer__links" href="#">Контакти</a></li>
+                            <li><a class="footer__links" href="./about/about.html">Про нас</a></li>
+                            <li><a class="footer__links" href="#contacts">Контакти</a></li>
                         
                             <li class="img_nav">
-                                <a href="#">
+                                <a href="https://www.facebook.com/profile.php?id=100084446345885" target="_blank">
                                     <img src="./main_page/f1.svg"  class="footer_icons" alt="facebook" height="24px">
                                 </a>
-                                <a href="#">
+                                <a href="https://www.instagram.com/aartbaza/" target="_blank">
                                     <img src="./main_page/insta.svg" class="footer_icons" alt="instagram" width="24px">
                                 </a>
-                                <a href="#">
+                                <a href="https://api.whatsapp.com/send/?phone=380937586272" target="_blank">
                                     <img src="./main_page/w1.svg" class="footer_icons" alt="whatsapp" width="24px">
                                 </a>
                             </li>
